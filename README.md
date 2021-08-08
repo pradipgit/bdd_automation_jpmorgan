@@ -54,19 +54,7 @@ Feature: Verify J.P.Morgan Logo
 
 ### Step defination 
 
-@When("^I search for \"(.*)\" key$")
-	public void searchJPMorgan(String str) {
-		try {
-			WebElement element = factory.gp.getSearchBoxElement();
-			element.sendKeys(str);
-			element.submit();
-			driver.manage().window().maximize();
 
-		} catch (Exception e) {
-			System.out.println("Error occured during opening browser: " + e);
-		}
-
-	}
 
 	@And("^I click on the first result link$")
 	public void clickFirstResult() {
@@ -87,13 +75,7 @@ Feature: Verify J.P.Morgan Logo
 		}
 	}
 
-	@Then("^I verify \"(.*)\"$")
-	public void verifyLogo(String logo) {
 
-		String logoName = factory.jp.getLogoName();
-		Assert.assertEquals(logo, logoName);
-
-	}
 
 ### Report  
 Navigate to target/cucumber-reports/reports.html  
