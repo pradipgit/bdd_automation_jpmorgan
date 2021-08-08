@@ -54,7 +54,7 @@ Feature: Verify J.P.Morgan Logo
 
 ### Step defination 
 
-
+Sample Step Defination:
 
 	@And("^I click on the first result link$")
 	public void clickFirstResult() {
