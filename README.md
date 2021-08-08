@@ -53,6 +53,7 @@ Feature: Verify J.P.Morgan Logo
 
 
 ### Step defination 
+
 @When("^I search for \"(.*)\" key$")
 	public void searchJPMorgan(String str) {
 		try {
